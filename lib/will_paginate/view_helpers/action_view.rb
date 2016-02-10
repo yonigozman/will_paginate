@@ -124,7 +124,7 @@ module WillPaginate
       end
 
       def merge_optional_params(url_params)
-        symbolized_update(url_params, @options[:params].to_h) if @options[:params]
+        symbolized_update(url_params, @options[:params]) if @options[:params]
         url_params
       end
 
